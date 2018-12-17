@@ -9,13 +9,28 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	int a, b, c, input; 
 
+	printf( "Vyberite deistvie?\n" ); 
+	printf( "1. +\n" ); 
+	printf( "2. -\n" ); 
+
+	printf( "Vash vybor: " ); 
+	scanf("%d", &input ); 
+
 	cout << "Vvedite pervoe chislo:"; 
 	cin >> a; 
 	cout << "Vvedite vtoroe chislo:"; 
 	cin >> b; 
 
-	c = a + b; 
-	cout << "Otvet:" << c << endl; 
+	switch ( input ) { 
+		case 1: 
+			c = a + b; 
+			cout << "Otvet:"<< c << endl; 
+			break; 
+		case 2: 
+			c = a - b; 
+			cout << "Otvet:" << c << endl; 
+			break; 
+	}
 
 	system("pause"); 
 
