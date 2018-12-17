@@ -14,39 +14,46 @@ int _tmain(int argc, _TCHAR* argv[])
 	printf( "2. -\n" );
 	printf( "3. *\n" ); 
 	printf( "4. /\n" ); 
+	printf( "5. Vyhod\n" ); 
 
 	printf( "Vash vybor: " ); 
 	scanf("%d", &input ); 
 
-	cout << "Vvedite pervoe chislo:"; 
-	cin >> a; 
-	cout << "Vvedite vtoroe chislo:"; 
-	cin >> b; 
+	if (input != 5) { 
 
-	switch ( input ) { 
-		case 1: 
-			c = a + b; 
-			cout << "Otvet:"<< c << endl; 
-			break; 
-		case 2: 
-			c = a - b; 
-			cout << "Otvet:" << c << endl; 
-			break; 
-		case 3: 
-			c = a * b; 
-			cout << "Otvet:" << c << endl; 
-			break; 
-		case 4: 
-			if (b != 0) 
-			{ 
-				c = a / b; 
+		cout << "Vvedite pervoe chislo:"; 
+		cin >> a; 
+		cout << "Vvedite vtoroe chislo:"; 
+		cin >> b; 
+
+		switch ( input ) { 
+			case 1: 
+				c = a + b; 
+				cout << "Otvet:"<< c << endl; 
+				break; 
+			case 2: 
+				c = a - b; 
 				cout << "Otvet:" << c << endl; 
-			} 
-			else 
-			{ 
-				cout << "Division by zero." << endl; 
-			} 
-			break; 
+				break; 
+			case 3: 
+				c = a * b; 
+				cout << "Otvet:" << c << endl; 
+				break; 
+			case 4: 
+				if (b != 0) 
+				{ 
+					c = a / b; 
+					cout << "Otvet:" << c << endl; 
+				} 
+				else 
+				{ 
+					cout << "Division by zero." << endl; 
+				} 
+				break; 
+			default: 
+				cout << "Nepravilnyi vvod." << endl; 
+		}
+
 	}
 
 	system("pause"); 
