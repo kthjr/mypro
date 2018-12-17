@@ -11,7 +11,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	printf( "Vyberite deistvie?\n" ); 
 	printf( "1. +\n" ); 
-	printf( "2. -\n" ); 
+	printf( "2. -\n" );
+	printf( "3. *\n" ); 
 
 	printf( "Vash vybor: " ); 
 	scanf("%d", &input ); 
@@ -28,6 +29,10 @@ int _tmain(int argc, _TCHAR* argv[])
 			break; 
 		case 2: 
 			c = a - b; 
+			cout << "Otvet:" << c << endl; 
+			break; 
+		case 3: 
+			c = a * b; 
 			cout << "Otvet:" << c << endl; 
 			break; 
 	}
