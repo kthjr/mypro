@@ -13,6 +13,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	printf( "1. +\n" ); 
 	printf( "2. -\n" );
 	printf( "3. *\n" ); 
+	printf( "4. /\n" ); 
 
 	printf( "Vash vybor: " ); 
 	scanf("%d", &input ); 
@@ -33,6 +34,10 @@ int _tmain(int argc, _TCHAR* argv[])
 			break; 
 		case 3: 
 			c = a * b; 
+			cout << "Otvet:" << c << endl; 
+			break; 
+		case 4: 
+			c = a / b; 
 			cout << "Otvet:" << c << endl; 
 			break; 
 	}
