@@ -37,8 +37,15 @@ int _tmain(int argc, _TCHAR* argv[])
 			cout << "Otvet:" << c << endl; 
 			break; 
 		case 4: 
-			c = a / b; 
-			cout << "Otvet:" << c << endl; 
+			if (b != 0) 
+			{ 
+				c = a / b; 
+				cout << "Otvet:" << c << endl; 
+			} 
+			else 
+			{ 
+				cout << "Division by zero." << endl; 
+			} 
 			break; 
 	}
 
