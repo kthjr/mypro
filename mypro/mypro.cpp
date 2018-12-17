@@ -7,6 +7,15 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	int a, b, c, input; 
+
+	cout << "Vvedite pervoe chislo:"; 
+	cin >> a; 
+	cout << "Vvedite vtoroe chislo:"; 
+	cin >> b; 
+
+	c = a + b; 
+	cout << "Otvet:" << c << endl; 
 
 	system("pause"); 
 
